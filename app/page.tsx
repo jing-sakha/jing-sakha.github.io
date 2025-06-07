@@ -1,8 +1,11 @@
 import Link from 'next/link'
 
+import Header from './components/header'
+
 export default function Page() {
   return (
-    <>
+    <div className='mx-auto container'>
+      <Header />
       <h1>Index Page</h1>
       <hr />
       <ul>
@@ -13,6 +16,6 @@ export default function Page() {
           <Link href="/post/2">Post 2</Link>
         </li>
       </ul>
-    </>
+    </div>
   )
 }
