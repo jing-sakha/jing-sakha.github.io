@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import About from './components/about'
 import Header from './components/header'
 
 export default function Page() {
@@ -7,15 +8,8 @@ export default function Page() {
     <div className='mx-auto container'>
       <Header />
       <h1>Index Page</h1>
-      <hr />
-      <ul>
-        <li>
-          <Link href="/post/1">Post 1</Link>
-        </li>
-        <li>
-          <Link href="/post/2">Post 2</Link>
-        </li>
-      </ul>
+      <About />
+      <Link href="/post/1">Post 1</Link>
     </div>
   )
 }
